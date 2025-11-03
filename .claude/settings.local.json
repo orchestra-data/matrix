@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command:*)",
+      "Bash(wmic product where \"name like ''%Python%''\" get name,version 2)",
+      "Bash(winget --version:*)",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "Bash(git clone:*)",
+      "Bash(node --version:*)",
+      "Bash(npm:*)",
+      "Bash(npx aios-fullstack install)",
+      "Bash(npx aios-fullstack install:*)",
+      "Bash(cmd /c scriptsinstall-aios.cmd)",
+      "Bash(if [ -f \"package.json\" ])",
+      "Bash(then cat package.json)",
+      "Bash(else echo \"No package.json found\")",
+      "Bash(fi)",
+      "Bash(if [ -f \".aios-installation-config.yaml\" ])",
+      "Bash(then cat .aios-installation-config.yaml)",
+      "Bash(else echo \"No .aios-installation-config.yaml found\")",
+      "Bash(if [ -d .aios-core ])",
+      "Bash(then echo 'AIOS-Core directory exists')",
+      "Bash(else echo \"No .aios-core directory\")",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
