@@ -1,5 +1,4 @@
-
-import React, { useState } from "react";
+import { useState } from "react";
 import { base44 } from "@/api/base44Client";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
@@ -23,7 +22,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Plus, GraduationCap, Edit, Trash2, Code, Clock, Sparkles, Network, GitBranch, BookOpen, ChevronRight } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
 import AIGenerator from "../components/containers/AIGenerator";
 import AutoCreateStructure from "../components/containers/AutoCreateStructure";
 
@@ -35,7 +33,6 @@ export default function Containers() {
   const [editingContainer, setEditingContainer] = useState(null);
   const [editingPathway, setEditingPathway] = useState(null); // New state for editing pathway
   const [selectedContainerForStructure, setSelectedContainerForStructure] = useState(null);
-  const [selectedContainerForPathway, setSelectedContainerForPathway] = useState(null); // New state for adding pathway to a specific container
   const [expandedContainers, setExpandedContainers] = useState([]); // New state for accordion expansion
 
   const [formData, setFormData] = useState({
@@ -256,7 +253,7 @@ export default function Containers() {
       try {
         const parsed = JSON.parse(container.ementa); // Assuming ementa might contain structure
         estrutura = parsed.estrutura_curricular; // Adjust field name if needed
-      } catch (e) {
+      } catch {
         alert('Estrutura curricular não encontrada ou inválida');
         return;
       }

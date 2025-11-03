@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { base44 } from "@/api/base44Client";
 import { Button } from "@/components/ui/button";
 import {
@@ -8,7 +8,7 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
-import { Layers, Loader2, CheckCircle2, AlertCircle, Target, FileText } from "lucide-react";
+import { Layers, Loader2, CheckCircle2, AlertCircle, Target } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 
 export default function AutoCreateModules({ seriesId, estruturaModulos, isOpen, onClose, onComplete }) {

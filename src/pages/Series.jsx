@@ -1,9 +1,8 @@
-
-import React, { useState } from "react";
+import { useState } from "react";
 import { base44 } from "@/api/base44Client";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -24,7 +23,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Plus, BookOpen, Edit, Trash2, GitBranch, Code, Clock, Award, Layers, FileText, Sparkles, Network, Target, CheckCircle } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
 import AIGeneratorSeries from "../components/series/AIGenerator";
 import AutoCreateModules from "../components/series/AutoCreateModules";
 
@@ -35,7 +33,6 @@ export default function Series() {
   const [isUnitDialogOpen, setIsUnitDialogOpen] = useState(false);
   const [editingSeries, setEditingSeries] = useState(null);
   const [editingUnit, setEditingUnit] = useState(null);
-  const [selectedSeriesForUnit, setSelectedSeriesForUnit] = useState(null);
   const [selectedSeriesForModules, setSelectedSeriesForModules] = useState(null);
   const [expandedSeries, setExpandedSeries] = useState([]);
   

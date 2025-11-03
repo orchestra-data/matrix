@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { base44 } from "@/api/base44Client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -11,7 +11,7 @@ import {
   DialogDescription,
   DialogFooter,
 } from "@/components/ui/dialog";
-import { Sparkles, Loader2, CheckCircle, Image, FileText, Target, Link2, ClipboardCheck } from "lucide-react";
+import { Sparkles, Loader2, Image, FileText, Target, Link2, ClipboardCheck } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 
 export default function AIGenerator({ isOpen, onClose, onDataGenerated }) {

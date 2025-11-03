@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { base44 } from "@/api/base44Client";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
-import { 
-  Plus, 
-  GripVertical, 
-  ChevronDown, 
+import {
+  GripVertical,
+  ChevronDown,
   ChevronRight,
   Settings,
   Save,
@@ -20,12 +19,10 @@ import {
   Clock,
   Target,
   Link as LinkIcon,
-  Image as ImageIcon,
   AlertCircle,
   CheckCircle2,
   Loader2,
-  Play,
-  Check
+  Play
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -239,7 +236,6 @@ export default function JourneyBuilder() {
         .find(t => t.id === draggableId);
       
       if (template) {
-        const unitComponents = getUnitComponents(destination.droppableId);
         const newComponent = {
           unit_id: destination.droppableId,
           nome: template.title,
@@ -800,7 +796,7 @@ export default function JourneyBuilder() {
 
                       {/* Components */}
                       <div className="ml-16 space-y-3 mb-8">
-                        {unitComps.map((comp, compIndex) => (
+                        {unitComps.map((comp) => (
                           <Card key={comp.id} className="p-4 hover:shadow-md transition-shadow">
                             <div className="flex items-center gap-3">
                               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-pink-500 to-purple-500 flex items-center justify-center text-white">
