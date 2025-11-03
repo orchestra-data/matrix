@@ -17,6 +17,46 @@ Esta aplicação foi criada automaticamente pelo Base44. É um aplicativo Vite+R
 | **Code Quality** | ✅ ESLint configurado |
 | **Node.js** | ✅ 18.x, 20.x |
 
+## 🖼️ Screenshots
+
+> 📸 **Para adicionar screenshots:** Siga o guia em [docs/SCREENSHOTS.md](docs/SCREENSHOTS.md)
+
+### Dashboard
+Visão geral com métricas, estatísticas e cards informativos.
+
+![Dashboard](docs/images/dashboard.png)
+*Dashboard principal com analytics e visão geral do projeto*
+
+### Containers
+Gestão completa de containers educacionais com estrutura curricular.
+
+![Containers](docs/images/containers.png)
+*Interface de gerenciamento de containers*
+
+### Séries e Disciplinas
+Organização de séries, disciplinas e unidades de aprendizado.
+
+![Séries](docs/images/series.png)
+*Gerenciamento de séries e unidades*
+
+### Journey Builder
+Construtor visual de jornadas com drag & drop e templates.
+
+![Journey Builder](docs/images/journey-builder.png)
+*Interface de construção de jornadas de aprendizado*
+
+### Biblioteca de Componentes
+Catálogo completo de componentes educacionais disponíveis.
+
+![Componentes](docs/images/components.png)
+*Biblioteca de componentes interativos*
+
+### Gerador AI
+Criação automática de estruturas usando inteligência artificial.
+
+![AI Generator](docs/images/ai-generator.png)
+*Modal de geração automática com IA*
+
 ## 🚀 Funcionalidades
 
 - **Gestão de Containers** - Crie e gerencie containers educacionais
