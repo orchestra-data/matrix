@@ -19,42 +19,42 @@ Esta aplicação foi criada automaticamente pelo Base44. É um aplicativo Vite+R
 
 ## 🖼️ Screenshots
 
-> 📸 **Para adicionar screenshots:** Siga o guia em [docs/SCREENSHOTS.md](docs/SCREENSHOTS.md)
+> 📸 **Nota:** Atualmente usando placeholders visuais. Para adicionar screenshots reais, siga o guia em [docs/SCREENSHOTS.md](docs/SCREENSHOTS.md)
 
 ### Dashboard
 Visão geral com métricas, estatísticas e cards informativos.
 
-![Dashboard](docs/images/dashboard.png)
+![Dashboard](docs/images/dashboard.svg)
 *Dashboard principal com analytics e visão geral do projeto*
 
 ### Containers
 Gestão completa de containers educacionais com estrutura curricular.
 
-![Containers](docs/images/containers.png)
+![Containers](docs/images/containers.svg)
 *Interface de gerenciamento de containers*
 
 ### Séries e Disciplinas
 Organização de séries, disciplinas e unidades de aprendizado.
 
-![Séries](docs/images/series.png)
+![Séries](docs/images/series.svg)
 *Gerenciamento de séries e unidades*
 
 ### Journey Builder
 Construtor visual de jornadas com drag & drop e templates.
 
-![Journey Builder](docs/images/journey-builder.png)
+![Journey Builder](docs/images/journey-builder.svg)
 *Interface de construção de jornadas de aprendizado*
 
 ### Biblioteca de Componentes
 Catálogo completo de componentes educacionais disponíveis.
 
-![Componentes](docs/images/components.png)
+![Componentes](docs/images/components.svg)
 *Biblioteca de componentes interativos*
 
 ### Gerador AI
 Criação automática de estruturas usando inteligência artificial.
 
-![AI Generator](docs/images/ai-generator.png)
+![AI Generator](docs/images/ai-generator.svg)
 *Modal de geração automática com IA*
 
 ## 🚀 Funcionalidades
